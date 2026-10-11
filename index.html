@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عناصر الفعل القرائي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #090d16 0%, #1e1b4b 50%, #311042 100%);
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .slide-card {
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 md:p-6 selection:bg-pink-500 selection:text-white">
+
+    <header class="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between py-4 border-b border-slate-800/80 mb-4">
+        <div class="text-center md:text-right mb-3 md:mb-0">
+            <span class="px-3 py-1 bg-pink-500/20 text-pink-300 text-xs font-bold rounded-full border border-pink-500/40">🌟 الكفاية القرائية</span>
+            <h1 class="text-lg md:text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 mt-1">
+                عناصر الفعل القرائي
+            </h1>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="flex items-center space-x-2 space-x-reverse bg-slate-900/90 p-1.5 rounded-2xl border border-slate-700 shadow-xl">
+            <button onclick="changeSlide(-1)" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-bold transition cursor-pointer">السابق ⬅️</button>
+            <span id="slideIndicator" class="px-4 text-xs font-bold text-pink-400 tracking-wider">الشريحة 1 من 16</span>
+            <button onclick="changeSlide(1)" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold transition cursor-pointer shadow-lg shadow-indigo-600/30">التالي ➡️</button>
+        </div>
+    </header>
+
+    <main class="w-full max-w-5xl flex-1 flex flex-col items-center justify-center my-2">
+        
+        <!-- Slide 1 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-12 shadow-2xl relative overflow-hidden text-center" data-slide="1">
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-pink-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <span class="px-4 py-1.5 bg-pink-500/20 text-pink-300 text-xs font-bold rounded-full border border-pink-500/40 inline-block mb-4">
+                📚 الكفاية القرائية
+            </span>
+            <h2 class="text-2xl md:text-4xl font-black text-pink-300 mb-6 leading-tight">
+                أهلاً بالقراء النبلاء!
+            </h2>
+            <div class="bg-slate-900/80 p-6 md:p-8 rounded-2xl border border-pink-500/30 max-w-2xl mx-auto shadow-inner">
+                <p class="text-sm md:text-base text-slate-200 leading-relaxed font-semibold">
+                    مرحباً بالقراء الذين ينتقِلون من عالم إلى عالم بالقراءة، ويتعرفون على صفات وأحداث الشعوب، ويفتح كل كتاب لهم أفقاً جديداً في الفكر الإنساني.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-12 shadow-2xl relative overflow-hidden text-center hidden" data-slide="2">
+            <div class="absolute -top-20 -left-20 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <span class="px-4 py-1.5 bg-indigo-500/20 text-indigo-300 text-xs font-bold rounded-full border border-indigo-500/40 inline-block mb-6">
+                ✨ المنطلق القرآني الأول
+            </span>
+            <div class="bg-slate-900/90 p-8 md:p-12 rounded-3xl border-2 border-indigo-500/40 max-w-3xl mx-auto shadow-2xl">
+                <p class="text-xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-pink-300 to-indigo-300 leading-relaxed mb-4">
+                    ﴿ اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ﴾
+                </p>
+                <span class="text-xs text-slate-400 block">سورة العلق (الآيات 1-3)</span>
+            </div>
+            <p class="text-xs md:text-sm text-slate-300 max-w-xl mx-auto mt-6">
+                أول ما نزلت به رسالة الإسلام كان دعوة صريحة للعلم، القراءة، وتدبر خلق الإنسان.
+            </p>
+        </div>
+
+        <!-- Slide 3: Structural Integrity Analogy (Moved right after Quranic Verse) -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="3">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">⚖️🏛️</span>
+                <h2 class="text-lg md:text-xl font-black text-amber-300 mb-1">فكرة الترابط البنيوي</h2>
+                <p class="text-xs text-slate-300 max-w-xl mx-auto">تماماً كما أن الدين يتقوم بأركانه وإذا تقوض ركن سقط البنيان ولم يصح الدين، فإن الفعل القرائي يتقوم بعناصره متكاملة!</p>
+            </div>
+
+            <div class="bg-slate-900/90 p-5 rounded-2xl border border-amber-500/40 max-w-3xl mx-auto shadow-inner space-y-3">
+                <div onclick="toggleAnalogyBox()" class="cursor-pointer bg-slate-950/90 p-4 rounded-xl border border-amber-500/50 hover:bg-amber-950/30 transition text-slate-100 font-bold flex justify-between items-center shadow-inner text-xs md:text-sm">
+                    <span>💡 ما وجه الشبه بين أركان الدين وعناصر الفعل القرائي في الاستقامة والسقوط؟</span>
+                    <span class="text-xs bg-amber-950 px-2.5 py-1 rounded-lg text-amber-300 border border-amber-600/50">انقر لكشف التأمل البنيوي 🔍</span>
+                </div>
+
+                <div id="analogyBoxContent" class="hidden space-y-2.5 pt-3 border-t border-slate-800 text-xs md:text-sm text-slate-200 text-right leading-relaxed">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                        <strong class="text-amber-300 block mb-1">🏛️ فكرة الترابط البنيوي تماماً كما أن الدين بأركانه:</strong>
+                        إذا تقوض ركن أساسي من أركان الدين سقط البنيان ولم يصح الدين، لأن الدين نظام متكامل لا يقوم إلا باستقامة جميع أركانه.
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                        <strong class="text-pink-300 block mb-1">📖 التطبيق على عناصر الفعل القرائي:</strong>
+                        تماماً بنفس القواعد؛ إذا اختل عنصر واحد من هذه العناصر (الكاتب، القارئ، اللغة، النص، ظروف الموقف)، <span class="text-yellow-300 font-bold">اختل الفعل القرائي تماماً</span> ولم تتحقق عملية فهم المعنى المنشود!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="4">
+            <div class="text-center mb-5">
+                <span class="text-3xl mb-1 inline-block">🎯</span>
+                <h2 class="text-xl md:text-3xl font-black text-pink-300 mb-1">الأهداف التربوية والتعليمية</h2>
+                <p class="text-xs md:text-sm text-slate-300 max-w-xl mx-auto">خارطة الطريق المعرفية والمهارية لرحلتنا في الكفاية القرائية.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[350px] overflow-y-auto pr-1">
+                <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-pink-500/30 flex items-start space-x-3 space-x-reverse">
+                    <span class="text-pink-400 font-bold text-xs bg-pink-950 px-2.5 py-1 rounded-xl">1</span>
+                    <p class="text-xs md:text-sm text-slate-200 leading-relaxed">أن تحدد العناصر المكونة لعملية القراءة.</p>
+                </div>
+                <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-indigo-500/30 flex items-start space-x-3 space-x-reverse">
+                    <span class="text-indigo-400 font-bold text-xs bg-indigo-950 px-2.5 py-1 rounded-xl">2</span>
+                    <p class="text-xs md:text-sm text-slate-200 leading-relaxed">أن تحلل لغة المجالات المختلفة وبناها المعرفية.</p>
+                </div>
+                <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-purple-500/30 flex items-start space-x-3 space-x-reverse">
+                    <span class="text-purple-400 font-bold text-xs bg-purple-950 px-2.5 py-1 rounded-xl">3</span>
+                    <p class="text-xs md:text-sm text-slate-200 leading-relaxed">أن تحدد المعاني الحرفية والأفكار الواردة في النص.</p>
+                </div>
+                <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-pink-500/30 flex items-start space-x-3 space-x-reverse">
+                    <span class="text-pink-400 font-bold text-xs bg-pink-950 px-2.5 py-1 rounded-xl">4</span>
+                    <p class="text-xs md:text-sm text-slate-200 leading-relaxed">أن تفسر التلميحات والتضمينات والأهداف غير المصرح بها في النص.</p>
+                </div>
+                <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-indigo-500/30 flex items-start space-x-3 space-x-reverse">
+                    <span class="text-indigo-400 font-bold text-xs bg-indigo-950 px-2.5 py-1 rounded-xl">5</span>
+                    <p class="text-xs md:text-sm text-slate-200 leading-relaxed">أن تستنتج أحكاماً وأوصافاً ومواقف تضمنها النص ولم يصرح بها.</p>
+                </div>
+                <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-purple-500/30 flex items-start space-x-3 space-x-reverse">
+                    <span class="text-purple-400 font-bold text-xs bg-purple-950 px-2.5 py-1 rounded-xl">6</span>
+                    <p class="text-xs md:text-sm text-slate-200 leading-relaxed">أن تحلل النص تحليلاً نقدياً محاكماً ما فيه من حقائق وآراء وبراهين.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Maze Game (Placed right after objectives) -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="5">
+            <div class="text-center mb-2">
+                <span class="text-2xl mb-1 inline-block">🎮</span>
+                <h2 class="text-lg md:text-xl font-black text-indigo-300 mb-1">التطبيق الإبداعي: لعبة متاهة رحلة القارئ</h2>
+                <p class="text-[11px] text-slate-300">مر باللغة، الكاتب، النص، والموقف.. ثم احصل على الكتاب الذهبي!</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="grid grid-cols-5 gap-1.5 mb-2 w-full max-w-sm text-center text-[10px]">
+                    <div id="b-lang" class="bg-slate-800 p-1 rounded border border-slate-700 opacity-40">🔤 اللغة</div>
+                    <div id="b-author" class="bg-slate-800 p-1 rounded border border-slate-700 opacity-40">✍️ الكاتب</div>
+                    <div id="b-text" class="bg-slate-800 p-1 rounded border border-slate-700 opacity-40">📜 النص</div>
+                    <div id="b-context" class="bg-slate-800 p-1 rounded border border-slate-700 opacity-40">🌍 الموقف</div>
+                    <div id="b-book" class="bg-slate-800 p-1 rounded border border-slate-700 opacity-40 text-yellow-300 font-bold">🏆 الكتاب</div>
+                </div>
+
+                <div class="relative w-full max-w-[210px] aspect-square flex justify-center items-center bg-slate-950 rounded-2xl p-1.5 game-canvas">
+                    <canvas id="mazeCanvas" class="w-full h-full rounded-xl"></canvas>
+                    
+                    <div id="mazeModal" class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm rounded-xl flex flex-col items-center justify-center p-4 text-center">
+                        <h3 class="text-xs font-bold text-pink-300 mb-1">متاهة القارئ الخاطفة</h3>
+                        <p class="text-[10px] text-slate-300 mb-2">اجمع الأركان الأربعة ووصل للكتاب خلال ثوانٍ!</p>
+                        <button onclick="startMaze()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-1 px-3 rounded-xl text-xs cursor-pointer shadow">ابدأ اللعبة 🚀</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-1 mt-2 w-32">
+                    <div></div>
+                    <button onclick="movePlayer(0, -1)" class="bg-slate-800 hover:bg-slate-700 p-1.5 rounded text-xs font-bold">⬆️</button>
+                    <div></div>
+                    <button onclick="movePlayer(-1, 0)" class="bg-slate-800 hover:bg-slate-700 p-1.5 rounded text-xs font-bold">⬅️</button>
+                    <button onclick="movePlayer(0, 1)" class="bg-slate-800 hover:bg-slate-700 p-1.5 rounded text-xs font-bold">⬇️</button>
+                    <button onclick="movePlayer(1, 0)" class="bg-slate-800 hover:bg-slate-700 p-1.5 rounded text-xs font-bold">➡️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden hidden" data-slide="6">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">📋</span>
+                <h2 class="text-lg md:text-xl font-black text-pink-300 mb-1">عناصر الفعل القرائي ودورها في تكوين المعنى</h2>
+                <p class="text-xs text-slate-300">انقر على أي عنصر أدناه لكشف دوره في تكوين المعنى:</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-2 mb-3">
+                <button onclick="revealElement('writer')" id="btn-writer" class="bg-slate-900/90 border border-pink-500/50 hover:bg-pink-950/40 p-2.5 rounded-xl text-xs font-bold text-pink-300 transition cursor-pointer">✍️ 1. الكاتب</button>
+                <button onclick="revealElement('reader')" id="btn-reader" class="bg-slate-900/90 border border-indigo-500/50 hover:bg-indigo-950/40 p-2.5 rounded-xl text-xs font-bold text-indigo-300 transition cursor-pointer">📖 2. القارئ</button>
+                <button onclick="revealElement('lang')" id="btn-lang" class="bg-slate-900/90 border border-amber-500/50 hover:bg-amber-950/40 p-2.5 rounded-xl text-xs font-bold text-amber-300 transition cursor-pointer">🔤 3. اللغة</button>
+                <button onclick="revealElement('text')" id="btn-text" class="bg-slate-900/90 border border-cyan-500/50 hover:bg-cyan-950/40 p-2.5 rounded-xl text-xs font-bold text-cyan-300 transition cursor-pointer">📜 4. النص</button>
+                <button onclick="revealElement('context')" class="col-span-2 md:col-span-1 bg-slate-900/90 border border-rose-500/50 hover:bg-rose-950/40 p-2.5 rounded-xl text-xs font-bold text-rose-300 transition cursor-pointer" id="btn-context">🌍 5. ظروف الموقف</button>
+            </div>
+
+            <div id="revealBox" class="bg-slate-950/95 border border-slate-800 rounded-2xl p-5 min-h-[170px] max-h-[200px] overflow-y-auto text-right text-xs md:text-sm text-slate-200 shadow-inner">
+                <div class="text-center text-slate-400 py-6">
+                    <span class="text-3xl block mb-2">👆</span>
+                    انقر على أي عنصر من الأزرار العلوية لاستعراض دوره في تكوين المعنى.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="7">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">⭕</span>
+                <h2 class="text-lg md:text-xl font-black text-pink-300 mb-1">شكل فين: التقاطع بين القارئ والكاتب</h2>
+                <p class="text-xs text-slate-300">انقر على أي عنصر لاستعراض أوجه التشابه والصلة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 items-center my-2">
+                <div onclick="showVennInfo('reader')" class="cursor-pointer bg-indigo-950/80 border border-indigo-400 p-3.5 rounded-2xl text-center hover:scale-105 transition shadow-lg">
+                    <div class="text-xl mb-1">📖</div>
+                    <h3 class="text-xs font-bold text-indigo-300">القارئ (المتلقي)</h3>
+                    <span class="text-[10px] text-indigo-200 bg-indigo-900/60 px-2 py-0.5 rounded-full mt-1.5 inline-block">انقر للتفصيل</span>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-950 to-slate-900 border-2 border-pink-500 p-3.5 rounded-2xl text-center shadow-lg">
+                    <div class="text-xl mb-1">🤝✨</div>
+                    <h3 class="text-xs font-black text-pink-300 mb-1.5">منطقة التقاطع المشتركة</h3>
+                    <div class="space-y-1 text-right text-[11px]">
+                        <div onclick="showVennInfo('lang')" class="bg-purple-900/60 p-1.5 rounded-lg cursor-pointer hover:bg-purple-800 transition">🔤 اللغة (الوعاء المشترك)</div>
+                        <div onclick="showVennInfo('text')" class="bg-purple-900/60 p-1.5 rounded-lg cursor-pointer hover:bg-purple-800 transition">📜 النص (الجسر الرابط)</div>
+                        <div onclick="showVennInfo('context')" class="bg-purple-900/60 p-1.5 rounded-lg cursor-pointer hover:bg-purple-800 transition">🌍 ظروف الموقف القرائي</div>
+                    </div>
+                </div>
+
+                <div onclick="showVennInfo('writer')" class="cursor-pointer bg-pink-950/80 border border-pink-400 p-3.5 rounded-2xl text-center hover:scale-105 transition shadow-lg">
+                    <div class="text-xl mb-1">✍️</div>
+                    <h3 class="text-xs font-bold text-pink-300">الكاتب (المُنتج)</h3>
+                    <span class="text-[10px] text-pink-200 bg-pink-900/60 px-2 py-0.5 rounded-full mt-1.5 inline-block">انقر للتفصيل</span>
+                </div>
+            </div>
+
+            <div id="vennBox" class="bg-slate-950/90 border border-slate-800 rounded-xl p-3 text-center text-xs text-slate-300 shadow-inner">
+                💡 انقر على أي عنصر في شكل فين أعلاه لعرض التفاصيل المعرفية الخاصة بها.
+            </div>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="8">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">🏫</span>
+                <h2 class="text-lg md:text-xl font-black text-indigo-300 mb-1">الموقف التعليمي والتحليل الجماعي للفرق</h2>
+                <p class="text-xs text-slate-300">طالبة في الصف الثالث الثانوي تقرأ إعلانا عن شروط القبول الجامعي لأنها تريد معرفة التخصصات التي يمكنها التقدم عليها. سبق أن قرأت عن أنظمة القبول لكنها وجدت مصطلحا جديدا لم تفهمه، فعادت إلى الفقرة وقرأت ما قبل المصطلح وما بعده.</p>
+            </div>
+
+            <div class="bg-slate-900/90 p-4 rounded-2xl border border-indigo-500/40 max-w-3xl mx-auto shadow-inner space-y-2 text-xs">
+                <div class="space-y-2 max-h-[220px] overflow-y-auto pr-1">
+                    <div onclick="toggleAnswer('ans1', this)" class="cursor-pointer bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 hover:border-indigo-400 transition">
+                        <div class="flex justify-between items-center font-bold text-pink-300">
+                            <span>الفريق الأول: من القارئ؟</span>
+                            <span class="text-[10px] bg-pink-950 px-2 py-0.5 rounded text-pink-400">انقر لإظهار الإجابة 🔍</span>
+                        </div>
+                        <div id="ans1" class="hidden mt-2 pt-2 border-t border-slate-800 text-slate-300 font-normal">
+                            طالبة في الصف الثالث الثانوي تسعى لمعرفة التخصصات المتاحة لها للتقديم.
+                        </div>
+                    </div>
+
+                    <div onclick="toggleAnswer('ans2', this)" class="cursor-pointer bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 hover:border-indigo-400 transition">
+                        <div class="flex justify-between items-center font-bold text-indigo-300">
+                            <span>الفريق الثاني: ما النص؟</span>
+                            <span class="text-[10px] bg-indigo-950 px-2 py-0.5 rounded text-indigo-400">انقر لإظهار الإجابة 🔍</span>
+                        </div>
+                        <div id="ans2" class="hidden mt-2 pt-2 border-t border-slate-800 text-slate-300 font-normal">
+                            إعلان شروط القبول الجامعي.
+                        </div>
+                    </div>
+
+                    <div onclick="toggleAnswer('ans3', this)" class="cursor-pointer bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 hover:border-indigo-400 transition">
+                        <div class="flex justify-between items-center font-bold text-purple-300">
+                            <span>الفريق الثالث: ما الهدف من القارئة؟</span>
+                            <span class="text-[10px] bg-purple-950 px-2 py-0.5 rounded text-purple-400">انقر لإظهار الإجابة 🔍</span>
+                        </div>
+                        <div id="ans3" class="hidden mt-2 pt-2 border-t border-slate-800 text-slate-300 font-normal">
+                            معرفة التخصصات الجامعية المتاحة لها للتقديم.
+                        </div>
+                    </div>
+
+                    <div onclick="toggleAnswer('ans4', this)" class="cursor-pointer bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 hover:border-indigo-400 transition">
+                        <div class="flex justify-between items-center font-bold text-amber-300">
+                            <span>الفريق الرابع: ما المعرفة السابقة عما احتواه النص؟</span>
+                            <span class="text-[10px] bg-amber-950 px-2 py-0.5 rounded text-amber-400">انقر لإظهار الإجابة 🔍</span>
+                        </div>
+                        <div id="ans4" class="hidden mt-2 pt-2 border-t border-slate-800 text-slate-300 font-normal">
+                            قراءتها السابقة عن أنظمة القبول.
+                        </div>
+                    </div>
+
+                    <div onclick="toggleAnswer('ans5', this)" class="cursor-pointer bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 hover:border-indigo-400 transition">
+                        <div class="flex justify-between items-center font-bold text-cyan-300">
+                            <span>ما الاستراتيجية التي استخدمتها الطالبة في النص؟</span>
+                            <span class="text-[10px] bg-cyan-950 px-2 py-0.5 rounded text-cyan-400">انقر لإظهار الإجابة 🔍</span>
+                        </div>
+                        <div id="ans5" class="hidden mt-2 pt-2 border-t border-slate-800 text-slate-300 font-normal">
+                            العودة إلى ما قبل المصطلح وما بعده (استراتيجية السياق لفهم المفردات الجديدة).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="9">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">🔍</span>
+                <h2 class="text-lg md:text-xl font-black text-pink-300 mb-1">التقويم التكويني: نص خالد والتحليل</h2>
+            </div>
+
+            <div class="bg-slate-900/90 p-5 rounded-2xl border border-pink-500/40 max-w-2xl mx-auto shadow-inner space-y-3">
+                <div class="bg-slate-950/80 p-3.5 rounded-xl border border-pink-500/30 text-slate-100 text-xs md:text-sm leading-relaxed text-right font-medium">
+                    عاد خالد إلى المنزل متعبًا ووضع حقيبته جانبًا ثم اتجه مباشرة إلى المطبخ. نظر إلى الساعة وابتسم وقال: لقد حان الوقت.
+                </div>
+
+                <div class="space-y-2 text-xs text-right">
+                    <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800 text-indigo-300 font-bold">• ما الذي فهمته من النص؟</div>
+                    <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800 text-indigo-300 font-bold">• لماذا ابتسم خالد؟</div>
+                    <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800 text-indigo-300 font-bold">• ما المقصود بحان الوقت؟</div>
+                </div>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800 text-xs text-slate-200">
+                    <div onclick="toggleFormativeReveal()" class="cursor-pointer bg-purple-950/40 p-2.5 rounded-xl border border-purple-500/30 leading-relaxed font-semibold text-purple-200 hover:border-purple-400 transition text-center">
+                        لاحظنا أن النص واحد ولكن الفهم لم يكن واحدًا، فلماذا؟ <span class="block text-[10px] text-purple-400 mt-0.5">انقر هنا لكشف التأمل 👆</span>
+                    </div>
+                    <div id="formativeRevealContent" class="hidden bg-indigo-950/40 p-2.5 rounded-lg border border-indigo-500/30 leading-relaxed text-slate-300">
+                        إذا القراءة ليست مجرد رؤية الكلمات، هناك عناصر تجعل القارئ يفهم النص ويفسره بطريقة معينة.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Doctor & Farmer (Field Language) -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="10">
+            <div class="text-center mb-4">
+                <span class="text-2xl mb-1 inline-block">🩺🌾</span>
+                <h2 class="text-lg md:text-xl font-black text-cyan-300 mb-1">تطبيقات لغة المجال: الطبيب والمزارع</h2>
+                <p class="text-xs text-slate-300">انقر على كل صورة أدناه لعرض لغة المجال والمصطلحات الخاصة بها:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <div onclick="toggleField('doctorInfo', this)" class="cursor-pointer bg-slate-900/90 border-2 border-cyan-500/50 hover:border-cyan-400 p-5 rounded-2xl text-center shadow-lg transition transform hover:scale-105">
+                    <div class="text-4xl mb-2">👨‍⚕️</div>
+                    <h3 class="text-sm font-bold text-cyan-300 mb-1">صورة الطبيب (المجال الطبي)</h3>
+                    <span class="text-[10px] text-cyan-200 bg-cyan-950 px-2.5 py-1 rounded-full inline-block">انقر للعرض 🔍</span>
+                    <div id="doctorInfo" class="hidden mt-3 pt-3 border-t border-slate-800 text-xs text-slate-200 text-right leading-relaxed font-normal">
+                        <strong>لغة المجال الطبي:</strong> تتضمن مصطلحات تشخيصية وعلاجية مثل: (تشخيص، أعراض، جرعة، ضغط الدم، تخطيط، تدخل جراحي، عقاقير). يفهمها الطبيب والمهتم بالعلوم الطبية بدقة.
+                    </div>
+                </div>
+
+                <div onclick="toggleField('farmerInfo', this)" class="cursor-pointer bg-slate-900/90 border-2 border-emerald-500/50 hover:border-emerald-400 p-5 rounded-2xl text-center shadow-lg transition transform hover:scale-105">
+                    <div class="text-4xl mb-2">👨‍🌾</div>
+                    <h3 class="text-sm font-bold text-emerald-300 mb-1">صورة المزارع / الفلاح (المجال الزراعي)</h3>
+                    <span class="text-[10px] text-emerald-200 bg-emerald-950 px-2.5 py-1 rounded-full inline-block">انقر للعرض 🔍</span>
+                    <div id="farmerInfo" class="hidden mt-3 pt-3 border-t border-slate-800 text-xs text-slate-200 text-right leading-relaxed font-normal">
+                        <strong>لغة المجال الزراعي:</strong> تتضمن مصطلحات بيئية وموسمية مثل: (حرث، تسميد، ري بالتنقيط، حصاد، فسائل، تربة خصبة، مكافحة الآفات). يفهمها المزارع والمتخصص الزراعي بدقة.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="11">
+            <div class="text-center mb-4">
+                <span class="text-3xl mb-1 inline-block">🇸🇦</span>
+                <h2 class="text-xl md:text-2xl font-black text-emerald-300 mb-1">جهود المملكة العربية السعودية في دعم القراءة</h2>
+                <p class="text-xs text-slate-300 max-w-xl mx-auto">رؤية وطنية رائدة لترسيخ مجتمع معرفي قارئ.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-4xl mx-auto">
+                <div class="bg-slate-900/90 p-4 rounded-2xl border border-emerald-500/30 text-center shadow-lg">
+                    <span class="text-2xl mb-2 inline-block">📚</span>
+                    <h3 class="text-xs font-bold text-emerald-300 mb-1">معارض الكتاب الدولية</h3>
+                    <p class="text-[11px] text-slate-300">تنظيم أكبر معارض الكتب في الرياض وجدة، والمشاركة الفاعلة عالمياً؛ كالمشاركة في معرض فرانكفورت الدولي للكتاب في ألمانيا 2026، ومعرض موسكو الدولي للكتاب في روسيا 2026.</p>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-2xl border border-indigo-500/30 text-center shadow-lg">
+                    <span class="text-2xl mb-2 inline-block">🏛️</span>
+                    <h3 class="text-xs font-bold text-indigo-300 mb-1">هيئة الأدب والنشر</h3>
+                    <p class="text-[11px] text-slate-300">إطلاق المبادرات المستمرة لدعم صناعة الكتاب وتشجيع القراءة.</p>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-2xl border border-amber-500/30 text-center shadow-lg">
+                    <span class="text-2xl mb-2 inline-block">🏆</span>
+                    <h3 class="text-xs font-bold text-amber-300 mb-1">المسابقات الوطنية</h3>
+                    <p class="text-[11px] text-slate-300">إطلاق مسابقات القراءة لتحفيز النشء والشباب على القراءة.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="12">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">🧠✨</span>
+                <h2 class="text-lg md:text-xl font-black text-amber-300 mb-1">مهارات تفكير عليا: التفوق في القدرات (القسم اللفظي)</h2>
+                <p class="text-xs text-slate-300 max-w-xl mx-auto">انقر على السؤال أدناه لاكتشاف كيف تفيدك عناصر الفعل القرائي:</p>
+            </div>
+
+            <div class="bg-slate-900/90 p-5 rounded-2xl border border-amber-500/40 max-w-2xl mx-auto shadow-inner space-y-3 text-xs md:text-sm">
+                <div onclick="toggleQudratAnswer()" class="cursor-pointer bg-slate-950/90 p-4 rounded-xl border border-amber-500/50 hover:bg-amber-950/30 transition text-slate-100 font-bold flex justify-between items-center shadow-inner">
+                    <span>💡 كيف يمكنكِ أن تتفوقي في القدرات (القسم اللفظي) باستخدام ما تعلمته من مهارات القراءة في هذه الوحدة؟</span>
+                    <span class="text-xs bg-amber-950 px-2.5 py-1 rounded-lg text-amber-300 border border-amber-600/50">انقر لإظهار الإجابة 🔍</span>
+                </div>
+                
+                <div id="qudratAnswerBox" class="hidden space-y-2 pt-3 border-t border-slate-800 text-slate-300 text-xs md:text-sm text-right">
+                    <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex items-start space-x-2 space-x-reverse">
+                        <span class="text-amber-400 font-bold">•</span>
+                        <span><strong>استيعاب المقروء:</strong> توظيف "لغة المجال" ومعرفة سياق النص لاستنتاج الأهداف الضمنية للكاتب بدقة وسرعة.</span>
+                    </div>
+                    <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex items-start space-x-2 space-x-reverse">
+                        <span class="text-amber-400 font-bold">•</span>
+                        <span><strong>إكمال الجمل والتناظر:</strong> إدراك الروابط الدلالية بين الكلمات ومعرفة معاني المفردات من خلال سياق ما قبلها وما بعدها.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="13">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">💡</span>
+                <h2 class="text-lg md:text-xl font-black text-amber-300 mb-1">استراتيجية التعامل مع المصطلحات والصعوبات</h2>
+            </div>
+
+            <div class="bg-slate-900/90 p-4 rounded-2xl border border-amber-500/40 max-w-2xl mx-auto shadow-inner space-y-3">
+                <div>
+                    <div onclick="toggleTermAnswer()" class="cursor-pointer bg-slate-950/90 p-3.5 rounded-xl border border-amber-500/50 hover:bg-amber-950/30 transition text-slate-100 font-bold flex justify-between items-center shadow-inner text-xs">
+                        <span>🤔 عندما أواجه مصطلحًا غير مألوف، ماذا أفعل؟</span>
+                        <span class="text-[10px] bg-amber-950 px-2 py-0.5 rounded text-amber-300 border border-amber-600/50">انقر لإظهار الإجابة 🔍</span>
+                    </div>
+                    
+                    <div id="termAnswerBox" class="hidden space-y-1.5 pt-2 mt-1 border-t border-slate-800 text-slate-300 text-xs text-right">
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-amber-400 font-bold">1.</span><span>أحدد المجال.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-amber-400 font-bold">2.</span><span>أقرأ الكلمات المحيطة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-amber-400 font-bold">3.</span><span>أستنتج المعنى.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-amber-400 font-bold">4.</span><span>أختبر المعنى داخل الجملة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-amber-400 font-bold">5.</span><span>أختار الإجابة أكثر ملائمة للسياق.</span></div>
+                    </div>
+                </div>
+
+                <!-- Difficult Text Strategy -->
+                <div>
+                    <div onclick="toggleDiffTextAnswer()" class="cursor-pointer bg-slate-950/90 p-3.5 rounded-xl border border-indigo-500/50 hover:bg-indigo-950/30 transition text-slate-100 font-bold flex justify-between items-center shadow-inner text-xs">
+                        <span>📖 إذا كان النص صعبًا، فما الذي تستطيعين تغييره أنت لتحسين فهمك؟</span>
+                        <span class="text-[10px] bg-indigo-950 px-2 py-0.5 rounded text-indigo-300 border border-indigo-600/50">انقر لإظهار الإجابة 🔍</span>
+                    </div>
+                    
+                    <div id="diffTextAnswerBox" class="hidden space-y-1.5 pt-2 mt-1 border-t border-slate-800 text-slate-300 text-xs text-right">
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أغير استراتيجية القراءة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أعيد القراءة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أحدد الكلمات الصعبة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أستفيد من السياق.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أربط النص بخبرتي السابقة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أحدد هدفي من القراءة.</span></div>
+                        <div class="bg-slate-950/70 p-2 rounded-lg border border-slate-800 flex items-center space-x-2 space-x-reverse"><span class="text-indigo-400 font-bold">•</span><span>أستعين بمعجم لتحديد معاني الكلمات.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Homework / Learning Activities -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="14">
+            <div class="text-center mb-4">
+                <span class="text-3xl mb-1 inline-block">📝</span>
+                <h2 class="text-xl md:text-2xl font-black text-pink-300 mb-1">الواجب المنزلي: أنشطة التعلم</h2>
+                <p class="text-xs text-slate-300 max-w-xl mx-auto">تطبيقات عملية ومهارية لترسيخ مهارات الكفاية القرائية.</p>
+            </div>
+
+            <div class="bg-slate-900/90 p-5 rounded-2xl border border-pink-500/40 max-w-2xl mx-auto shadow-inner space-y-3">
+                <div class="bg-slate-950/80 p-4 rounded-xl border border-pink-500/30 text-right space-y-2 text-xs md:text-sm">
+                    <div class="flex items-start space-x-2 space-x-reverse">
+                        <span class="text-pink-400 font-bold">1.</span>
+                        <p class="text-slate-200">اختاري نصاً علمياً أو أدبياً، وقومي بتحليله وفق عناصر الفعل القرائي (الكاتب، القارئ، اللغة، النص، ظروف الموقف).</p>
+                    </div>
+                    <div class="flex items-start space-x-2 space-x-reverse">
+                        <span class="text-pink-400 font-bold">2.</span>
+                        <p class="text-slate-200">جهزي مثالاً على مصطلح من لغة مجال معين (طبي، اقتصادي، تقني) وقومي بتوضيح كيفية استنتاج معناه من السياق.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Restored Slide 15 / Critical Thinking Higher Order Challenge -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden hidden" data-slide="15">
+            <div class="text-center mb-3">
+                <span class="text-2xl mb-1 inline-block">🚀</span>
+                <h2 class="text-lg md:text-xl font-black text-pink-300 mb-1">تحدي مهارات التفكير العليا والمحاكمة النقدية</h2>
+                <p class="text-xs text-slate-300">أجيبي عن السؤال الآتي بوعي نقدي عميق:</p>
+            </div>
+
+            <div class="bg-slate-900/90 p-5 rounded-2xl border border-pink-500/40 max-w-2xl mx-auto shadow-inner space-y-3">
+                <div onclick="toggleHigherOrderAnswer()" class="cursor-pointer bg-slate-950/90 p-4 rounded-xl border border-pink-500/50 hover:bg-pink-950/30 transition text-slate-100 font-bold flex justify-between items-center shadow-inner text-xs md:text-sm">
+                    <span>💡 لو افترضنا أن القارئ استغنى عن (ظروف الموقف القرائي)، فكيف يتأثر فهمه للنص؟</span>
+                    <span class="text-xs bg-pink-950 px-2.5 py-1 rounded-lg text-pink-300 border border-pink-600/50">انقر لإظهار التحليل 🔍</span>
+                </div>
+
+                <div id="higherOrderAnswerBox" class="hidden space-y-2 pt-3 border-t border-slate-800 text-slate-300 text-xs md:text-sm text-right leading-relaxed">
+                    <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800">
+                        <strong class="text-pink-300 block mb-1">📌 التحليل المعرفي:</strong>
+                        غياب ظروف الموقف القرائي (كالبيئة والزمان والحالة النفسية والدوافع) يؤدي حتماً إلى <span class="text-yellow-300 font-bold">سوء الفهم أو اجتزاء المعنى</span> من سياقه الحقيقي؛ لأن النص ليس كتل كلمات مجردة، بل هو رسالة حية تتشكل دلالتها بامتزاجها بملابسات الموقف الذي كتبت وفهمت فيه.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16 -->
+        <div class="slide-pane w-full slide-card rounded-3xl p-6 md:p-12 shadow-2xl relative overflow-hidden text-center hidden" data-slide="16">
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <span class="px-4 py-1.5 bg-purple-500/20 text-purple-300 text-xs font-bold rounded-full border border-purple-500/40 inline-block mb-4">
+                💎 همسة إثرائية ختامية
+            </span>
+            <h2 class="text-xl md:text-3xl font-black text-purple-300 mb-4">
+                همسة: من اليوم لا تبدأ القراءة بسؤال ماذا يقول النص، بل عندما أقرأ، اسألي نفسك:
+            </h2>
+            <div class="bg-slate-900/90 p-6 md:p-8 rounded-2xl border border-purple-500/40 max-w-2xl mx-auto shadow-inner text-right space-y-3">
+                <ul class="space-y-1 text-xs md:text-sm text-indigo-200 font-bold">
+                    <li>1. من أنا كقارئة؟</li>
+                    <li>2. لماذا أقرأ؟</li>
+                    <li>3. ماذا أقرأ؟</li>
+                    <li>4. ماذا أعرف عن الموضوع؟</li>
+                    <li>5. كيف سأقرأ؟</li>
+                </ul>
+                <div class="pt-2 border-t border-slate-800 text-center text-xs text-amber-300 font-bold">
+                    ✨ (إذا امتلكت المفاتيح الخمسة، تحولت من قارئة تستقبل النص إلى قارئة تفكر في النص).
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="w-full max-w-5xl text-center py-2 text-xs text-slate-400 border-t border-slate-800/80 flex items-center justify-between">
+        <span>الكفاية القرائية</span>
+        <span>استخدم زري "السابق" و"التالي" للتنقل بين الشرائح</span>
+    </footer>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 16;
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide > totalSlides) currentSlide = 1;
+            if (currentSlide < 1) currentSlide = totalSlides;
+
+            document.querySelectorAll('.slide-pane').forEach(pane => pane.classList.add('hidden'));
+            document.querySelector(`[data-slide="${currentSlide}"]`).classList.remove('hidden');
+            document.getElementById('slideIndicator').innerText = `الشريحة ${currentSlide} من ${totalSlides}`;
+        }
+
+        const elementDetails = {
+            writer: `
+                <h4 class="font-bold text-pink-300 text-sm mb-2 flex items-center">✍️ 1. دور الكاتب في تكوين المعنى:</h4>
+                <ul class="space-y-1.5 text-slate-200">
+                    <li>• يستطيع الكاتب الخبير أن يوصل الأفكار الصعبة إلى عامة القراء بأسلوب سهل.</li>
+                    <li>• إذا كان الكاتب خبيراً في مجاله فإنه يحظى بمصداقية عالية.</li>
+                    <li>• إذا كان الكاتب موضوعياً فإنّه سيعالج موضوعه بحيادية تامة.</li>
+                </ul>
+            `,
+            reader: `
+                <h4 class="font-bold text-indigo-300 text-sm mb-2 flex items-center">📖 2. دور القارئ في تكوين المعنى:</h4>
+                <ul class="space-y-1.5 text-slate-200">
+                    <li>• يستطيع القارئ المتمرس أن يتغلب على الصعوبات في أي نص.</li>
+                    <li>• إذا كان القارئ مثقفاً فإنه يكتشف جوانب القوة.</li>
+                    <li>• يستطيع القارئ الجيد أن يفهم ظاهر النص ودلالاته الضمنية وما وراءه.</li>
+                </ul>
+            `,
+            lang: `
+                <h4 class="font-bold text-amber-300 text-sm mb-2 flex items-center">🔤 3. دور اللغة في تكوين المعنى:</h4>
+                <ul class="space-y-1.5 text-slate-200">
+                    <li><strong>- المعجم:</strong> إذا كانت ألفاظ الكاتب مألوفة لدى القارئ فسيكون فهمه أدق.</li>
+                    <li><strong>- لغة المجال:</strong> إذا كان القارئ يمتلك لغة المجال المعرفي للنص فسيفهم المصطلحات ولغته.</li>
+                    <li><strong>- لغة الكاتب:</strong> إذا عبر الكاتب عن أفكاره بأسلوب مباشر ولغة مبسطة فسيفهمه أي قارئ.</li>
+                </ul>
+            `,
+            text: `
+                <h4 class="font-bold text-cyan-300 text-sm mb-2 flex items-center">📜 4. دور النص في تكوين المعنى:</h4>
+                <ul class="space-y-1.5 text-slate-200">
+                    <li>• تختلف محاور اهتمام القارئ والكاتب بحسب نوع النص (أدبي، علمي، وظيفي).</li>
+                    <li>• تختلف البنية الفنية للنص بحسب نوعه (مقال، رسالة، قصة).</li>
+                    <li>• تختلف درجة صعوبة النص باختلاف نوعه الفني وهدفه وموضوعه.</li>
+                </ul>
+            `,
+            context: `
+                <h4 class="font-bold text-rose-300 text-sm mb-2 flex items-center">🌍 5. دور ظروف الموقف القرائي:</h4>
+                <ul class="space-y-1.5 text-slate-200">
+                    <li>• القراءة في جو لا يساعد على القراءة كالضوضاء مثلاً، أو في مكان غير مناسب، أو في حالة توتر، أو في حالة قلق وخوف تحول دون فهم المعنى.</li>
+                </ul>
+            `
+        };
+
+        function revealElement(key) {
+            const box = document.getElementById('revealBox');
+            box.innerHTML = elementDetails[key] || '';
+            ['writer', 'reader', 'lang', 'text', 'context'].forEach(k => {
+                const btn = document.getElementById(`btn-${k}`);
+                if(btn) {
+                    if(k === key) btn.classList.add('bg-slate-800', 'ring-2', 'ring-pink-400');
+                    else btn.classList.remove('bg-slate-800', 'ring-2', 'ring-pink-400');
+                }
+            });
+        }
+
+        const vennData = {
+            reader: "📖 القارئ: المتلقي الفاعل الذي يعيد إنتاج المعنى بتجربته وثقافته ولغته.",
+            writer: "✍️ الكاتب: مُنتج الخطاب وهندس المعنى ومودع الأفكار داخل بنية النص بدقة ومصداقية.",
+            lang: "🔤 اللغة (المعجم، لغة المجال، لغة الكاتب): الوعاء المشترك ونظام الإشارات الدلالية.",
+            text: "📜 النص (النوع، البنية، الصعوبة): الجسر الوسيط والكيان الذي يربط أفق الإبداع بالتلقي.",
+            context: "🌍 ظروف الموقف: البيئة، الضوضاء، الحالة النفسية والذهنية الحاكمة لفهم المعنى."
+        };
+
+        function showVennInfo(key) {
+            const box = document.getElementById('vennBox');
+            box.innerText = vennData[key] || '';
+            box.classList.add('border-pink-500', 'bg-pink-950/20');
+            setTimeout(() => box.classList.remove('border-pink-500', 'bg-pink-950/20'), 500);
+        }
+
+        function toggleAnswer(id, el) {
+            const ansDiv = document.getElementById(id);
+            if(ansDiv.classList.contains('hidden')) {
+                ansDiv.classList.remove('hidden');
+                el.classList.add('border-indigo-500', 'bg-indigo-950/30');
+            } else {
+                ansDiv.classList.add('hidden');
+                el.classList.remove('border-indigo-500', 'bg-indigo-950/30');
+            }
+        }
+
+        function toggleField(infoId, el) {
+            const infoDiv = document.getElementById(infoId);
+            if(infoDiv.classList.contains('hidden')) {
+                infoDiv.classList.remove('hidden');
+                el.classList.add('ring-2', 'ring-indigo-400');
+            } else {
+                infoDiv.classList.add('hidden');
+                el.classList.remove('ring-2', 'ring-indigo-400');
+            }
+        }
+
+        function toggleFormativeReveal() {
+            const content = document.getElementById('formativeRevealContent');
+            if(content.classList.contains('hidden')) content.classList.remove('hidden');
+            else content.classList.add('hidden');
+        }
+
+        function toggleTermAnswer() {
+            const box = document.getElementById('termAnswerBox');
+            if(box.classList.contains('hidden')) box.classList.remove('hidden');
+            else box.classList.add('hidden');
+        }
+
+        function toggleDiffTextAnswer() {
+            const box = document.getElementById('diffTextAnswerBox');
+            if(box.classList.contains('hidden')) box.classList.remove('hidden');
+            else box.classList.add('hidden');
+        }
+
+        function toggleQudratAnswer() {
+            const box = document.getElementById('qudratAnswerBox');
+            if(box.classList.contains('hidden')) box.classList.remove('hidden');
+            else box.classList.add('hidden');
+        }
+
+        function toggleAnalogyBox() {
+            const box = document.getElementById('analogyBoxContent');
+            if(box.classList.contains('hidden')) box.classList.remove('hidden');
+            else box.classList.add('hidden');
+        }
+
+        function toggleHigherOrderAnswer() {
+            const box = document.getElementById('higherOrderAnswerBox');
+            if(box.classList.contains('hidden')) box.classList.remove('hidden');
+            else box.classList.add('hidden');
+        }
+
+        // Maze Game Logic
+        const canvas = document.getElementById('mazeCanvas');
+        const ctx = canvas.getContext('2d');
+        const cols = 5, rows = 5;
+        let cellSize = 0;
+        let player = { x: 0, y: 0 };
+        let items = {
+            lang: { x: 1, y: 0, collected: false },
+            author: { x: 3, y: 0, collected: false },
+            text: { x: 1, y: 4, collected: false },
+            context: { x: 3, y: 4, collected: false },
+            book: { x: 4, y: 4, unlocked: false }
+        };
+
+        function startMaze() {
+            document.getElementById('mazeModal').classList.add('hidden');
+            player = { x: 0, y: 0 };
+            for(let k in items) if(k !== 'book') items[k].collected = false;
+            items.book.unlocked = false;
+            
+            ['lang', 'author', 'text', 'context', 'book'].forEach(k => {
+                document.getElementById(`b-${k}`).style.opacity = '0.4';
+            });
+            
+            const size = 180;
+            canvas.width = size;
+            canvas.height = size;
+            cellSize = size / cols;
+            drawMaze();
+        }
+
+        function drawMaze() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.strokeStyle = '#312e81';
+            ctx.lineWidth = 1;
+            for(let r=0; r<rows; r++) {
+                for(let c=0; c<cols; c++) {
+                    ctx.strokeRect(c*cellSize, r*cellSize, cellSize, cellSize);
+                }
+            }
+
+            const icons = { lang: '🔤', author: '✍️', text: '📜', context: '🌍', book: '🏆' };
+            for(let k in items) {
+                let it = items[k];
+                if(k === 'book' && !it.unlocked) continue;
+                if(!it.collected && k !== 'book' || (k === 'book' && it.unlocked)) {
+                    let x = it.x * cellSize + cellSize/2;
+                    let y = it.y * cellSize + cellSize/2;
+                    ctx.font = `${cellSize*0.45}px sans-serif`;
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(icons[k], x, y);
+                }
+            }
+
+            let px = player.x * cellSize + cellSize/2;
+            let py = player.y * cellSize + cellSize/2;
+            ctx.beginPath();
+            ctx.arc(px, py, cellSize*0.35, 0, Math.PI*2);
+            ctx.fillStyle = '#6366f1';
+            ctx.fill();
+            ctx.fillText('📖', px, py);
+        }
+
+        function movePlayer(dx, dy) {
+            let nx = player.x + dx;
+            let ny = player.y + dy;
+            if(nx >= 0 && nx < cols && ny >= 0 && ny < rows) {
+                player.x = nx;
+                player.y = ny;
+                checkMazeCollisions();
+                drawMaze();
+            }
+        }
+
+        function checkMazeCollisions() {
+            ['lang', 'author', 'text', 'context'].forEach(k => {
+                let it = items[k];
+                if(!it.collected && player.x === it.x && player.y === it.y) {
+                    it.collected = true;
+                    document.getElementById(`b-${k}`).style.opacity = '1';
+                }
+            });
+
+            if(['lang', 'author', 'text', 'context'].every(k => items[k].collected)) {
+                items.book.unlocked = true;
+                document.getElementById(`b-book`).style.opacity = '1';
+            }
+
+            if(items.book.unlocked && player.x === items.book.x && player.y === items.book.y) {
+                document.getElementById('mazeModal').classList.remove('hidden');
+                document.getElementById('mazeModal').innerHTML = `
+                    <h3 class="text-xs font-bold text-yellow-300 mb-1">🎉 الفوز المبهر!</h3>
+                    <p class="text-[10px] text-slate-200 mb-2">أتممت رحلة القارئ بنجاح.</p>
+                    <button onclick="startMaze()" class="bg-indigo-600 px-3 py-1 rounded text-xs text-white cursor-pointer">إعادة اللعب 🔄</button>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
